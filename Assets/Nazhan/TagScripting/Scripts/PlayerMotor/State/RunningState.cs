@@ -13,7 +13,10 @@ public class RunningState : BaseState
     {
         Vector3 m = Vector3.zero;
 
-        m.x = motor.SnapToLane();
+         // Horizontal movement based on input
+        float horizontalInput = Input.GetAxis("Horizontal");
+        m.x = horizontalInput * motor.baseSidewaySpeed; // Left/right movement
+        //m.x = motor.SnapToLane();
         m.y = -1.0f;
         m.z = motor.baseRunSpeed;
 
@@ -22,11 +25,11 @@ public class RunningState : BaseState
 
     public override void Transition()
     {
-        if (InputManager.Instance.SwipeLeft)
-            motor.ChangeLane(-1);
+        //if (InputManager.Instance.SwipeLeft)
+        //    motor.ChangeLane(-1);
 
-        if (InputManager.Instance.SwipeRight)
-            motor.ChangeLane(1);
+        //if (InputManager.Instance.SwipeRight)
+        //    motor.ChangeLane(1);
 
         if (InputManager.Instance.SwipeUp && motor.isGrounded)
             motor.ChangeState(GetComponent<JumpingState>());

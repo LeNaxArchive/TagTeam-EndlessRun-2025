@@ -18,7 +18,8 @@ public class JumpingState : BaseState
         // Create our return vector
         Vector3 m = Vector3.zero;
 
-        m.x = motor.SnapToLane();
+        //m.x = motor.SnapToLane();
+        m.x = 0;
         m.y = motor.verticalVelocity;
         m.z = motor.baseRunSpeed;
 
@@ -27,11 +28,11 @@ public class JumpingState : BaseState
 
     public override void Transition()
     {
-        if (InputManager.Instance.SwipeLeft)
-            motor.ChangeLane(-1);
+        //if (InputManager.Instance.SwipeLeft)
+        //    motor.ChangeLane(-1);
 
-        if (InputManager.Instance.SwipeRight)
-            motor.ChangeLane(1);
+        //if (InputManager.Instance.SwipeRight)
+        //    motor.ChangeLane(1);
 
         if (motor.verticalVelocity < 0)
             motor.ChangeState(GetComponent<FallingState>());

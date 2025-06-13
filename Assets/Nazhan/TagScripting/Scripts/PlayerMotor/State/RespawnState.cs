@@ -16,7 +16,7 @@ public class RespawnState : BaseState
         motor.controller.enabled = true;
 
         motor.verticalVelocity = 0.0f;
-        motor.currentLane = 0;
+        //motor.currentLane = 0;
         motor.anim?.SetTrigger("Respawn");
     }
 
@@ -33,7 +33,8 @@ public class RespawnState : BaseState
         // Create our return vector
         Vector3 m = Vector3.zero;
 
-        m.x = motor.SnapToLane();
+        //m.x = motor.SnapToLane();
+        m.x = 0;
         m.y = motor.verticalVelocity;
         m.z = motor.baseRunSpeed;
 
@@ -45,10 +46,10 @@ public class RespawnState : BaseState
         if (motor.isGrounded && (Time.time - startTime) > immunityTime)
             motor.ChangeState(GetComponent<RunningState>());
 
-        if (InputManager.Instance.SwipeLeft)
-            motor.ChangeLane(-1);
+        //if (InputManager.Instance.SwipeLeft)
+        //    motor.ChangeLane(-1);
 
-        if (InputManager.Instance.SwipeRight)
-            motor.ChangeLane(1);
+        //if (InputManager.Instance.SwipeRight)
+        //    motor.ChangeLane(1);
     }
 }

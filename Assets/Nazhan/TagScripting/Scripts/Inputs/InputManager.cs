@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
     private InputSystem_Actions actionScheme;
 
     // Configuration
-    [SerializeField] private float sqrSwipeDeadzone = 50.0f;
+    [SerializeField] private float sqrSwipeDeadzone = 100.0f;
 
     #region public properties
     public bool Tap { get { return tap; } }
@@ -46,7 +46,7 @@ public class InputManager : MonoBehaviour
     }
     private void ResetInputs()
     {
-        tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;
+        //tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;
     }
 
     private void SetupControl()
@@ -112,11 +112,11 @@ public class InputManager : MonoBehaviour
 
     public void OnEnable()
     {
-        actionScheme.Enable();
+        //actionScheme.Enable();
     }
     public void OnDisable()
     {
-        actionScheme.Disable();
+        //actionScheme.Disable();
     }
 }
 

@@ -15,7 +15,11 @@ public class FallingState : BaseState
         // Create our return vector
         Vector3 m = Vector3.zero;
 
-        m.x = motor.SnapToLane();
+        
+        // Get input for left/right movement
+        float horizontalInput = Input.GetAxis("Horizontal"); // A/D or Left/Right Arrow keys
+        //m.x = motor.SnapToLane();
+        m.x = horizontalInput * motor.baseSidewaySpeed; // Left/Right movement
         m.y = motor.verticalVelocity;
         m.z = motor.baseRunSpeed;
 
@@ -24,13 +28,14 @@ public class FallingState : BaseState
 
     public override void Transition()
     {
-        if (InputManager.Instance.SwipeLeft)
-            motor.ChangeLane(-1);
+        //if (InputManager.Instance.SwipeLeft)
+        //    motor.ChangeLane(-1);
 
-        if (InputManager.Instance.SwipeRight)
-            motor.ChangeLane(1);
+        //if (InputManager.Instance.SwipeRight)
+        //    motor.ChangeLane(1);
 
         if (motor.isGrounded)
             motor.ChangeState(GetComponent<RunningState>());
     }
+
 }

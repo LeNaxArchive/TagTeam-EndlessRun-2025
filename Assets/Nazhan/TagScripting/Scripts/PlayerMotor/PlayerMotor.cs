@@ -7,9 +7,9 @@ public class PlayerMotor : MonoBehaviour
     [HideInInspector] public Vector3 moveVector;
     [HideInInspector] public float verticalVelocity;
     [HideInInspector] public bool isGrounded;
-    [HideInInspector] public int currentLane;
+    //[HideInInspector] public int currentLane;
 
-    public float distanceInBetweenLanes = 3.0f;
+    //public float distanceInBetweenLanes = 3.0f;
     public float baseRunSpeed = 5.0f;
     public float baseSidewaySpeed = 10.0f;
     public float gravity = 14.0f;
@@ -30,7 +30,7 @@ public class PlayerMotor : MonoBehaviour
         state = GetComponent<RunningState>();
         state.Construct();
 
-        isPause = true;
+        //isPause = true;
     }
 
     private void Update()
@@ -57,7 +57,8 @@ public class PlayerMotor : MonoBehaviour
         //Move the player
         controller.Move(moveVector * Time.deltaTime);
     }
-    public float SnapToLane()
+
+    /*public float SnapToLane()
     {
         float r = 0.0f;
 
@@ -77,11 +78,13 @@ public class PlayerMotor : MonoBehaviour
             r = 0;
         }
         return r;
-    }
-    public void ChangeLane(int direction)
+    }*/
+
+    /*public void ChangeLane(int direction)
     {
         currentLane = Mathf.Clamp(currentLane + direction, -1, 1);
-    }
+    }*/
+
     public void ChangeState(BaseState s)
     {
         state.Destruct();
@@ -111,7 +114,7 @@ public class PlayerMotor : MonoBehaviour
 
     public void ResetPlayer()
     {
-        currentLane = 0;
+        //currentLane = 0;
         transform.position = new Vector3(0, 0, -9);
         anim?.SetTrigger("Idle");
         PausePlayer();

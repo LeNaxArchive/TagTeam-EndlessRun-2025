@@ -10,7 +10,6 @@ public class GameStats : MonoBehaviour
     public float score;
     public float highscore;
     public float distanceModifier = 1.5f;
-    private bool passed10k = false;
 
     // Fish
     public int totalFish;
@@ -29,7 +28,6 @@ public class GameStats : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
     }
 
     public void Update()
@@ -37,25 +35,10 @@ public class GameStats : MonoBehaviour
         float s = GameManager.Instance.motor.transform.position.z * distanceModifier;
         s += fishCollectedThisSession * pointsPerFish;
 
-        if (s > score)
-        {
-            score = s;
-            if (Time.time - lastScoreUpdate > scoreUpdateDelta)
-            {
-                lastScoreUpdate = Time.time;
-                OnScoreChange?.Invoke(score);
-            }
 
-            if (score > 10000 && !passed10k)
-            {
-                passed10k = true;
-                
-            }
-
-        }
     }
 
-    
+
 
     public void CollectFish()
     {

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RunningState : BaseState
 {
@@ -13,10 +11,7 @@ public class RunningState : BaseState
     {
         Vector3 m = Vector3.zero;
 
-         // Horizontal movement based on input
-        float horizontalInput = Input.GetAxis("Horizontal");
-        m.x = horizontalInput * motor.baseSidewaySpeed; // Left/right movement
-        //m.x = motor.SnapToLane();
+        m.x = 0f;
         m.y = -1.0f;
         m.z = motor.baseRunSpeed;
 
@@ -25,11 +20,6 @@ public class RunningState : BaseState
 
     public override void Transition()
     {
-        //if (InputManager.Instance.SwipeLeft)
-        //    motor.ChangeLane(-1);
-
-        //if (InputManager.Instance.SwipeRight)
-        //    motor.ChangeLane(1);
 
         if (InputManager.Instance.SwipeUp && motor.isGrounded)
             motor.ChangeState(GetComponent<JumpingState>());

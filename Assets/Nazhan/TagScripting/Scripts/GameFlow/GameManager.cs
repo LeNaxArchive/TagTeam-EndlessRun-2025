@@ -1,13 +1,11 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 
 public enum GameCamera
 {
     Init = 0,
     Game = 1,
-    Shop = 2,
-    Respawn = 3
+    Respawn = 2
 }
 
 public class GameManager : MonoBehaviour
@@ -19,17 +17,26 @@ public class GameManager : MonoBehaviour
     public WorldGeneration worldGeneration;
     public SceneChunkGeneration sceneChunkGeneration;
     public GameObject[] cameras;
+    public bool isConnectedToGooglePlayServices;
 
     private GameState state;
+
+    private void Awake()
+    {
+
+        
+    }
 
     private void Start()
     {
         instance = this;
         state = GetComponent<GameStateInit>();
         state.Construct();
+
     }
 
-    
+
+
     private void Update()
     {
         state.UpdateState();

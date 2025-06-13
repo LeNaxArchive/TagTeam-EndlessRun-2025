@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
     private InputSystem_Actions actionScheme;
 
     // Configuration
-    [SerializeField] private float sqrSwipeDeadzone = 100.0f;
+    [SerializeField] private float sqrSwipeDeadzone = 50.0f;
 
     #region public properties
     public bool Tap { get { return tap; } }
@@ -46,7 +46,7 @@ public class InputManager : MonoBehaviour
     }
     private void ResetInputs()
     {
-        //tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;
+        tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;
     }
 
     private void SetupControl()
@@ -58,12 +58,6 @@ public class InputManager : MonoBehaviour
         actionScheme.Gameplay.TouchPosition.performed += ctx => OnPosition(ctx);
         actionScheme.Gameplay.StartDrag.performed += ctx => OnStartDrag(ctx);
         actionScheme.Gameplay.EndDrag.performed += ctx => OnEndDrag(ctx);
-
-
-        //actionScheme.Player.Move.performed += ctx => OnTap(ctx);
-        //actionScheme.Player.TouchPosition.performed += ctx => OnPosition(ctx);
-        //actionScheme.Player.StartDrag.performed += ctx => OnStartDrag(ctx);
-        //actionScheme.Player.EndDrag.performed += ctx => OnEndDrag(ctx);
     }
 
     private void OnEndDrag(InputAction.CallbackContext ctx)
@@ -93,7 +87,7 @@ public class InputManager : MonoBehaviour
             }
         }
 
-        startDrag = Vector3.zero;
+        startDrag = Vector2.zero;
     }
     private void OnStartDrag(InputAction.CallbackContext ctx)
     {
@@ -106,17 +100,15 @@ public class InputManager : MonoBehaviour
     private void OnTap(InputAction.CallbackContext ctx)
     {
         tap = true;
-        Debug.Log($"Touch Count: {tap}");
     }
-
 
     public void OnEnable()
     {
-        //actionScheme.Enable();
+        actionScheme.Enable();
     }
     public void OnDisable()
     {
-        //actionScheme.Disable();
+        actionScheme.Disable();
     }
 }
 

@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Nazhan/Scenes/Game.unity
+    guid: b9e749a27ec95c749ad225ee33875768
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: c685308560ecc4b47bc338101bcc7007, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+  m_UseUCBPForAssetBundles: 0

@@ -93,7 +93,7 @@ public class InputManager : MonoBehaviour
             }
         }
 
-        startDrag = Vector2.zero;
+        startDrag = Vector3.zero;
     }
     private void OnStartDrag(InputAction.CallbackContext ctx)
     {

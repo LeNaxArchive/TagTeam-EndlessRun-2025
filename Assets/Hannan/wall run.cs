@@ -1,12 +1,16 @@
 using UnityEngine;
 
 public class wallrun : MonoBehaviour
-{
+{   
+    //GameObject player;
     private Rigidbody rb;
+
     public float speed = 3;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        //ccontroller();
     }
 
     // Update is called once per frame

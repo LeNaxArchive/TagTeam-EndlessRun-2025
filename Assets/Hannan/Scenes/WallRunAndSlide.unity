@@ -1198,7 +1198,7 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3171b704d2b66dc46bd11815a70d5fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
 --- !u!114 &1832887288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,8 +1311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf74008c13d0f24a8b2689628f5b0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 10
-  jumpSpeed: 9
+  walkSpeed: 5
+  jumpSpeed: 6
 --- !u!1 &1881041581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,6 +1519,10 @@ PrefabInstance:
     - target: {fileID: 7261788509117709845, guid: 2743a66ba504b4445808259c55c38465, type: 3}
       propertyPath: m_Name
       value: prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691226894819963577, guid: 2743a66ba504b4445808259c55c38465, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

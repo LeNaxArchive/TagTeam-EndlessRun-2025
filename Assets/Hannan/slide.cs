@@ -9,6 +9,7 @@ public class slide : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        //ccontroller();
     }
 
     // Update is called once per frame

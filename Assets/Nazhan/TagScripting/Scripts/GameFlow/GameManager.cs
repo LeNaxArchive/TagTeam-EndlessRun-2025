@@ -17,14 +17,15 @@ public class GameManager : MonoBehaviour
     public WorldGeneration worldGeneration;
     public SceneChunkGeneration sceneChunkGeneration;
     public GameObject[] cameras;
-    public bool isConnectedToGooglePlayServices;
 
     private GameState state;
 
+    public bool gameOver = false;
+    
     private void Awake()
     {
 
-        
+
     }
 
     private void Start()

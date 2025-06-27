@@ -100,9 +100,9 @@ Transform:
   m_Children:
   - {fileID: 1284089145478090941}
   - {fileID: 6684951510783775285}
-  - {fileID: 6678404313958104266}
   - {fileID: 7723566690576959337}
   - {fileID: 4370827548686285574}
+  - {fileID: 6678404313958104266}
   - {fileID: 8079839074145950553}
   - {fileID: 6598889408209051235}
   - {fileID: 6380681201943014683}
@@ -194,6 +194,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6667244663161780600}
     m_Modifications:
+    - target: {fileID: 64809302462633862, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6437024624887371557, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Playground_Cover_Pole_01 (8)
@@ -272,6 +276,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6667244663161780600}
     m_Modifications:
+    - target: {fileID: 64809302462633862, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6437024624887371557, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Playground_Cover_Pole_01 (7)
@@ -350,6 +358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6667244663161780600}
     m_Modifications:
+    - target: {fileID: 64809302462633862, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6437024624887371557, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Playground_Cover_Pole_01 (5)
@@ -442,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119457106093208994, guid: c3e2611498fc26d4c8ba53f9a2a6e059, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.93
+      value: 0.628
       objectReference: {fileID: 0}
     - target: {fileID: 8119457106093208994, guid: c3e2611498fc26d4c8ba53f9a2a6e059, type: 3}
       propertyPath: m_LocalPosition.z
@@ -475,6 +487,14 @@ PrefabInstance:
     - target: {fileID: 8119457106093208994, guid: c3e2611498fc26d4c8ba53f9a2a6e059, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460984666577800268, guid: c3e2611498fc26d4c8ba53f9a2a6e059, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460984666577800268, guid: c3e2611498fc26d4c8ba53f9a2a6e059, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -576,6 +596,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6667244663161780600}
     m_Modifications:
+    - target: {fileID: 64809302462633862, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6437024624887371557, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Playground_Cover_Pole_01 (6)
@@ -702,6 +726,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2427326598649610560, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427326598649610560, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035256206150810578, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035256206150810578, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -767,6 +807,22 @@ PrefabInstance:
     - target: {fileID: 1024196523300013959, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427326598649610560, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427326598649610560, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035256206150810578, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035256206150810578, guid: 28adc18d69e9d1141904cff2ed142870, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -932,6 +988,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261139240579149509, guid: a102d20a5289e8b408c1c9298e185159, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261139240579149509, guid: a102d20a5289e8b408c1c9298e185159, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1014,6 +1078,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261139240579149509, guid: a102d20a5289e8b408c1c9298e185159, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261139240579149509, guid: a102d20a5289e8b408c1c9298e185159, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1032,6 +1104,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6667244663161780600}
     m_Modifications:
+    - target: {fileID: 64809302462633862, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6437024624887371557, guid: 13358e05c8cec5945a7e299da05ca9d0, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Playground_Cover_Pole_01 (9)

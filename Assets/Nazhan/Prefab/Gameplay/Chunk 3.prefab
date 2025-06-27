@@ -103,7 +103,7 @@ MeshCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 5
   m_Convex: 0
@@ -212,7 +212,7 @@ MeshCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 5
   m_Convex: 0
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   targets:
-  - {fileID: 0}
+  - {fileID: 6854437807398466172}
   idleTime: []
   targetIndex: 0
   countUp: 0
@@ -778,6 +778,11 @@ MonoBehaviour:
   patrolDistance: 10
   chaseDistance: 10
   attackDistance: 1.5
+--- !u!224 &6854437807398466172 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2271723485620231557, guid: b6a18101a6dae864990ec9c68d95479b, type: 3}
+  m_PrefabInstance: {fileID: 4654772201699962873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6971894052408615574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2330672268801805679, guid: b6a18101a6dae864990ec9c68d95479b, type: 3}
